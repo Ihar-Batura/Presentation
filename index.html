@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Presentation</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section><h2>Docker and Kubernetes</h2></section>
+        <section>
+          <h3>What is Docker</h3>
+          <img src="assets/docker.png" class="r-stretch" />
+        </section>
+        <section>
+          <h4>
+            Docker helps developers build, share, run, and verify applications
+            anywhere — without tedious environment configuration or management.
+          </h4>
+        </section>
+        <section>
+          <h4>
+            Docker streamlines the development lifecycle by allowing developers
+            to work in standardized environments using local containers which
+            provide your applications and services. Containers are great for
+            continuous integration and continuous delivery (CI/CD) workflows.
+          </h4>
+        </section>
+        <section>
+          <h3>Docker architecture</h3>
+          <img src="assets/docker-architecture.png" class="r-stretch" />
+        </section>
+        <section>
+          <h4>
+            Docker is written in the Go programming language and takes advantage
+            of several features of the Linux kernel to deliver its
+            functionality. Docker uses a technology called namespaces to provide
+            the isolated workspace called the container. When you run a
+            container, Docker creates a set of namespaces for that container.
+          </h4>
+        </section>
+
+        <section>
+          <h3>What is Kubernetes</h3>
+          <img src="assets/kubernetes.png" class="r-stretch" />
+        </section>
+        <section>
+          <h4>
+            It groups containers that make up an application into logical units
+            for easy management and discovery. Kubernetes builds upon 15 years
+            of experience of running production workloads at Google, combined
+            with best-of-breed ideas and practices from the community.
+          </h4>
+        </section>
+        <section>
+          <h4>
+            Kubernetes is open source giving you the freedom to take advantage
+            of on-premises, hybrid, or public cloud infrastructure, letting you
+            effortlessly move workloads to where it matters to you.
+          </h4>
+        </section>
+        <section>
+          <h3>Cluster architecture</h3>
+          <img src="assets/Cluster.png" class="r-stretch" />
+        </section>
+        <section>
+          <h3>Docker and Kubernetes in Development</h3>
+          <img src="assets/dak.png" class="r-stretch" />
+        </section>
+        <section>
+          <h3>The end</h3>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
